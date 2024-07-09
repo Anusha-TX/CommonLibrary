@@ -15,7 +15,7 @@
   </this:FailedStep.Expected_Result>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>871.3333333333334,846</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>814,738.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,88 +104,68 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FailedStep" sap:VirtualizedContainerService.HintSize="550.6666666666666,781.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FailedStep" sap:VirtualizedContainerService.HintSize="512,674" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488.6666666666667,670.6666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-      <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="450,431.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2">
-            <ui:LogMessage.Level>
-              <InArgument x:TypeArguments="ui:LogLevel">
-                <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
-              </InArgument>
-            </ui:LogMessage.Level>
-            <ui:LogMessage.Message>
-              <InArgument x:TypeArguments="x:Object">
-                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"Actual step: "+str_in_actualStep+"\n"+"Expected step: "+str_in_expectedStep+"\n"+"Report id: "+str_in_reportId+"\n"+"str_in_testId: "+str_in_testId+"\n"+"Actual Result: "+Actual_Result+"\n"+"Expected Result: "+Expected_Result</CSharpValue>
-              </InArgument>
-            </ui:LogMessage.Message>
-          </ui:LogMessage>
-          <ra:StepStatus CodeBlock="{x:Null}" statusInfo="{x:Null}" ContinueOnError="True" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="StepStatus_1" Status="Fail" TakeScreenshot="True">
-            <ra:StepStatus.ActualResult>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Actual_Result</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.ActualResult>
-            <ra:StepStatus.ExpectedResult>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Expected_Result</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.ExpectedResult>
-            <ra:StepStatus.ReportId>
-              <InArgument x:TypeArguments="x:Int32">
-                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">str_in_reportId</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.ReportId>
-            <ra:StepStatus.StepDescription>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">str_in_actualStep</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.StepDescription>
-            <ra:StepStatus.StepName>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">str_in_expectedStep</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.StepName>
-            <ra:StepStatus.TestId>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">str_in_testId</CSharpValue>
-              </InArgument>
-            </ra:StepStatus.TestId>
-          </ra:StepStatus>
-        </Sequence>
-      </TryCatch.Try>
-      <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454.6666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-            </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1">
-              <ui:LogMessage.Message>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">exception.Message</CSharpValue>
-                </InArgument>
-              </ui:LogMessage.Message>
-            </ui:LogMessage>
-          </ActivityAction>
-        </Catch>
-      </TryCatch.Catches>
-    </TryCatch>
+    <Sequence sap:VirtualizedContainerService.HintSize="450,563.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+        <ui:LogMessage.Level>
+          <InArgument x:TypeArguments="ui:LogLevel">
+            <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Level>
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"Actual step: "+str_in_actualStep+"\n"+"Expected step: "+str_in_expectedStep+"\n"+"Report id: "+str_in_reportId+"\n"+"str_in_testId: "+str_in_testId+"\n"+"Actual Result: "+Actual_Result+"\n"+"Expected Result: "+Expected_Result</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+      <ra:StepStatus CodeBlock="{x:Null}" statusInfo="{x:Null}" ContinueOnError="True" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="StepStatus_1" Status="Fail" TakeScreenshot="True">
+        <ra:StepStatus.ActualResult>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Actual_Result</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.ActualResult>
+        <ra:StepStatus.ExpectedResult>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Expected_Result</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.ExpectedResult>
+        <ra:StepStatus.ReportId>
+          <InArgument x:TypeArguments="x:Int32">
+            <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">str_in_reportId</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.ReportId>
+        <ra:StepStatus.StepDescription>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">str_in_actualStep</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.StepDescription>
+        <ra:StepStatus.StepName>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">str_in_expectedStep</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.StepName>
+        <ra:StepStatus.TestId>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">str_in_testId</CSharpValue>
+          </InArgument>
+        </ra:StepStatus.TestId>
+      </ra:StepStatus>
+      <Throw sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="Throw_2">
+        <InArgument x:TypeArguments="s:Exception">
+          <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">new BusinessRuleException("Exception Occured")</CSharpValue>
+        </InArgument>
+      </Throw>
+    </Sequence>
   </Sequence>
 </Activity>
